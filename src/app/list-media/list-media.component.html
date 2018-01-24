@@ -1,0 +1,12 @@
+<p>
+  {{printThis}}
+</p>
+<div>
+<ul>
+  <li *ngFor="let image of mediaArray">
+    <img [src]="mediaService.mediaUrl + image.thumbnail">
+    <h4>{{image.title}}</h4>
+    <p>{{image.description}}</p>
+  </li>
+</ul>
+</div>
