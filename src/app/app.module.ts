@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ListMediaComponent } from './list-media/list-media.component';
 import {HttpClientModule} from '@angular/common/http';
 import {MediaService} from './services/media.service';
+import {DigitransitService} from './services/digitransit.service';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
@@ -19,7 +20,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HttpClientModule,
     NgbModule.forRoot()
   ],
-  providers: [MediaService],
+  providers: [
+    MediaService,
+    DigitransitService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
